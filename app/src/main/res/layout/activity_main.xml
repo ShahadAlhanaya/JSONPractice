@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="#F0EFFB"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_number"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="50dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="20dp"
+            android:inputType="number"
+            android:background="@drawable/bg_field"
+            android:hint="Enter contact number" />
+
+        <Button
+            android:id="@+id/btn_getContact"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#6059D1"
+            android:layout_height="wrap_content"
+            android:text="Get Contact"
+            app:cornerRadius="50dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_contactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_field"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#6E69BF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_contactLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_field"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:text=""
+                android:backgroundTint="#E3E2FA"
+                android:textColor="#6E69BF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_contactMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#E3E2FA"
+                android:background="@drawable/bg_field"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:text=""
+                android:textColor="#6E69BF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_contactEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#E3E2FA"
+                android:background="@drawable/bg_field"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:text=""
+                android:textColor="#6E69BF"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_notFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="No contact found"
+            android:textColor="#9893EC"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
